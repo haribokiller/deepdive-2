@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-stone-950 text-white font-sans">
+
+ 
+  <nav class="bg-black sticky top-0 shadow-md z-50">
+    <div class="container mx-auto px-4 lg:px-8 flex justify-between items-center h-14">
+      <div class="flex items-center">
+        
+        <button id="menuToggle" class="lg:hidden p-2 hover:bg-gray-700 rounded-full focus:outline-none">
+          <svg class="h-6 w-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        
+        <a href="https://www.youtube.com/" class="flex items-center space-x-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="Logo" class="h-6">
+        </a>
+      </div>
+
+     
+      <div class="hidden lg:flex items-center w-1/2">
+        <input type="text" placeholder="Search" class="h-10 w-full px-4 py-2 text-sm border border-gray-600 rounded-l-full bg-stone-900 text-white placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-500">
+        <button class="h-10 px-4 bg-stone-800 rounded-r-full border border-gray-600 hover:bg-gray-700 focus:ring-1 focus:ring-gray-500">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-200">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+        </button>
+      </div>
+
+    
+      <div class="flex items-center space-x-4">
+        <button  class="hidden lg:block h-10 w-10 rounded-full bg-gray-700 hover:bg-gray-600">
+<img src="bm.png" alt="">
+        </button>
+       
+      </div>
+    </div>
+  </nav>
+
+  <div class="flex">
+   
+    <aside id="sidebar" class="hidden lg:block w-64 h-screen bg-stone-900 text-white fixed top-0 left-0 z-40 lg:relative lg:flex flex-col">
+      <nav class="mt-4 space-y-1">
+        <ul class="space-y-1">
+          <li class="px-4 py-2 hover:bg-gray-700 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h11M9 21l-6-6m6 6L21 3" />
+            </svg>
+            <a href="index.html" class="ml-4 block text-sm font-medium">Home</a>
+          </li>
+          <li class="px-4 py-2 hover:bg-gray-700 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 4h16M4 8h16M4 12h16M4 16h16M4 20h16" />
+            </svg>
+            <a href="#" class="ml-4 block text-sm font-medium">Shorts</a>
+          </li>
+          <li class="px-4 py-2 hover:bg-gray-700 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+            <a href="abbonomenten.html" class="ml-4 block text-sm font-medium">Subscriptions</a>
+          </li>
+        </ul>
+
+        <hr class="my-4 border-gray-700">
+
+        <ul class="space-y-1">
+          <li class="px-4 py-2 hover:bg-gray-700 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+            <a href="#" class="ml-4 block text-sm font-medium">Library</a>
+          </li>
+          <li class="px-4 py-2 hover:bg-gray-700 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 10h6m-3 10a7 7 0 1 0 0-14 7 7 0 0 0 0 14z" />
+            </svg>
+            <a href="#" class="ml-4 block text-sm font-medium">History</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    
+    <main class="container mx-auto px-4 lg:px-8 mt-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+     
+        <div class="bg-stone-950 p-4 rounded-lg">
+          <img src="11.png" alt="Video Thumbnail" class="rounded-md mb-3">
+          <h3 class="font-semibold text-sm"><a href="https://www.youtube.com/watch?v=Bytq6MtrYl4">JOINED LOS RATONES!</a></h3>
+          <p class="text-gray-400 text-xs">Thebausffs</p>
+          <p class="text-gray-400 text-xs">98K views - 5 hours ago</p>
+        </div>
+
+        <div class="bg-stone-950 p-4 rounded-lg">
+          <img
+            src="12.png"
+            alt="Video Thumbnail"
+            class="rounded-md mb-3"
+          />
+          <h3 class="font-semibold text-sm"><a href="https://www.youtube.com/watch?v=GhrpLiHZKac">I Swapped Lives with a PRO KICKBOXER</a></h3>
+          <p class="text-gray-400 text-xs">Eddie Hall</p>
+          <p class="text-gray-400 text-xs">399K weergaven - 2 days ago</p>
+        </div>
+  
+        <div class="bg-stone-950 p-4 rounded-lg">
+          <img
+            src="13.png"
+            alt="Video Thumbnail"
+            class="rounded-md mb-3"
+          />
+          <h3 class="font-semibold text-sm"><a href="https://www.youtube.com/watch?v=XlQIuuu0M4U">UNCUT VERSION | League of Legends</a></h3>
+          <p class="text-gray-400 text-xs">Azzapp </p>
+          <p class="text-gray-400 text-xs">23K weergaven -  3 weeks ago</p>
+        </div>
+  
+        <div class="bg-stone-950 p-4 rounded-lg">
+          <img
+            src="14.png"
+            alt="Video Thumbnail"
+            class="rounded-md mb-3"
+          /> 
+           <h3 class="font-semibold text-sm"><a href="https://www.youtube.com/watch?v=lVppeVUCX0g">The Entire INSANE Zeus and T1 Controversy</a></h3>
+          <p class="text-gray-400 text-xs">rival</p>
+          <p class="text-gray-400 text-xs">821K weergaven - 2 months ago</p>
+        </div>
+  
+        <div class="bg-stone-950 p-4 rounded-lg">
+          <img
+            src="1.png"
+            alt="Video Thumbnail"
+            class="rounded-md mb-3"
+          /> 
+           <h3 class="font-semibold text-sm"><a href="https://www.youtube.com/watch?v=4S-8mjx7qJU">TRYING TO BEAT MANCHESTER'S ALL-YOU-CAN-EAT TACO RECORD!</a></h3>
+          <p class="text-gray-400 text-xs">
+            BeardMeatsFood
+             </p>
+             <p class="text-gray-400 text-xs">245K weergaven - 11 months ago</p>
+        </div>
+  
+        <div class="bg-stone-950 p-4 rounded-lg">
+          <img
+            src="2.png"
+            alt="Video Thumbnail"
+            class="rounded-md mb-3"
+          /> 
+           <h3 class="font-semibold text-sm"><a href="https://www.youtube.com/watch?v=Y3_EniKaMD4">NO ONE could find him... (Mario Hide n Seek Multiplayer Online)</a></h3>
+          <p class="text-gray-400 text-xs">
+            Grand POOBear
+            </p>
+            <p class="text-gray-400 text-xs">732K weergaven - 1 months ago</p>
+        </div>
+  
+        <div class="bg-stone-950 p-4 rounded-lg">
+          <img
+            src="3.png"
+            alt="Video Thumbnail"
+            class="rounded-md mb-3"
+          /> 
+           <h3 class="font-semibold text-sm"><a href="https://www.youtube.com/watch?v=PxoQh-OMgwk">48 Hours in Hawaii I'll Never Forget</a></h3>
+          <p class="text-gray-400 text-xs">
+            Jimmy Zhang</p>
+            <p class="text-gray-400 text-xs">553K weergaven - 9 months ago</p>
+        </div>
+  
+        <div class="bg-stone-950 p-4 rounded-lg">
+          <img
+            src="4.png"
+            alt="Video Thumbnail"
+            class="rounded-md mb-3"
+          /> 
+           <h3 class="font-semibold text-sm"><a href="https://www.youtube.com/watch?v=Vq3AUHf4Uek">Ribeye & Eggs For Breakfast</a></h3>
+          <p class="text-gray-400 text-xs"> King Davis</p>
+          <p class="text-gray-400 text-xs"> 500 weergaven - 1 month ago</p>
+        </div>
+  
+        
+        <div class="bg-stone-950 p-4 rounded-lg">
+          <img
+            src="8.png"
+            alt="Video Thumbnail"
+            class="rounded-md mb-3"
+          /> 
+           <h3 class="font-semibold text-sm"><a href="https://www.youtube.com/watch?v=lsRpSsFb4hg">Arcane Season 2 | Act 3 Sneak Peek | Netflix</a></h3>
+          <p class="text-gray-400 text-xs">Netflix</p>
+          <p class="text-gray-400 text-xs"> 1M weergaven - 18 hours ago</p>
+        </div>
+  
+        
+        <div class="bg-stone-950 p-4 rounded-lg">
+          <img
+            src="5.png"
+            alt="Video Thumbnail"
+            class="rounded-md mb-3"
+          /> 
+           <h3 class="font-semibold text-sm"><a href="https://www.youtube.com/watch?v=AMSF5WEAh3M">
+            What Nightlife in Taiwan is REALLY like 👀</a></h3>
+          <p class="text-gray-400 text-xs"> Jimmy Zhang</p>
+          <p class="text-gray-400 text-xs"> 447k weergaven - 7 months ago</p>
+        </div>
+  
+        
+        <div class="bg-stone-950 p-4 rounded-lg">
+          <img
+            src="6.png"
+            alt="Video Thumbnail"
+            class="rounded-md mb-3"
+          /> 
+           <h3 class="font-semibold text-sm"><a href="https://www.youtube.com/watch?v=AlqhAOkS9Zw">AMP JOINS SPECIAL FORCES</a></h3>
+          <p class="text-gray-400 text-xs"> Amp</p>
+          <p class="text-gray-400 text-xs"> 4,1M weergaven - 4 days ago</p>
+        </div>
+  
+        
+        <div class="bg-stone-950 p-4 rounded-lg">
+          <img
+            src="7.png"
+            alt="Video Thumbnail"
+            class="rounded-md mb-3"
+          /> 
+           <h3 class="font-semibold text-sm"><a href="https://www.youtube.com/watch?v=f9G5AnNv0Bk">Flying Back Home To Surprise My Parents </a></h3>
+          <p class="text-gray-400 text-xs"> Justin Han</p>
+          <p class="text-gray-400 text-xs"> 454k weergaven - 9 month ago</p>
+        </div>
+       
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('hidden');
+      overlay.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
